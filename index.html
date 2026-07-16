@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Krisna Murti | Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-fixed-variant": "#713700",
+                    "primary": "#d2bbff",
+                    "primary-fixed": "#eaddff",
+                    "on-primary": "#3f008e",
+                    "primary-container": "#7c3aed",
+                    "tertiary-container": "#a15100",
+                    "tertiary": "#ffb784",
+                    "on-error": "#690005",
+                    "surface-container": "#152031",
+                    "on-surface-variant": "#ccc3d8",
+                    "inverse-surface": "#d8e3fb",
+                    "on-tertiary": "#4f2500",
+                    "inverse-primary": "#732ee4",
+                    "surface-bright": "#2f3a4c",
+                    "surface": "#081425",
+                    "on-surface": "#d8e3fb",
+                    "on-tertiary-fixed-variant": "#713700",
+                    "tertiary-fixed": "#ffdcc6",
+                    "secondary-container": "#d97722",
+                    "inverse-on-surface": "#263143",
+                    "on-secondary": "#4f2500",
+                    "secondary": "#ffb783",
+                    "error": "#ffb4ab",
+                    "on-secondary-fixed": "#301400",
+                    "secondary-fixed": "#ffdcc5",
+                    "primary-fixed-dim": "#d2bbff",
+                    "surface-tint": "#d2bbff",
+                    "surface-container-highest": "#2a3548",
+                    "surface-dim": "#081425",
+                    "on-secondary-container": "#451f00",
+                    "secondary-fixed-dim": "#ffb783",
+                    "background": "#081425",
+                    "tertiary-fixed-dim": "#ffb784",
+                    "outline": "#958da1",
+                    "surface-container-low": "#111c2d",
+                    "surface-container-lowest": "#040e1f",
+                    "on-primary-fixed": "#25005a",
+                    "on-tertiary-fixed": "#301400",
+                    "outline-variant": "#4a4455",
+                    "on-primary-fixed-variant": "#5a00c6",
+                    "on-background": "#d8e3fb",
+                    "surface-container-high": "#1f2a3c",
+                    "on-tertiary-container": "#ffe0cd",
+                    "on-error-container": "#ffdad6",
+                    "error-container": "#93000a",
+                    "surface-variant": "#2a3548",
+                    "on-primary-container": "#ede0ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "container-padding": "24px",
+                    "stack-md": "12px",
+                    "stack-sm": "4px",
+                    "gutter": "20px",
+                    "section-gap": "80px",
+                    "stack-lg": "24px",
+                    "base": "8px"
+            },
+            "fontFamily": {
+                    "body-md": ["Plus Jakarta Sans"],
+                    "headline-md": ["Plus Jakarta Sans"],
+                    "body-lg": ["Plus Jakarta Sans"],
+                    "headline-lg": ["Plus Jakarta Sans"],
+                    "headline-lg-mobile": ["Plus Jakarta Sans"],
+                    "display": ["Plus Jakarta Sans"],
+                    "label-md": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "display": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "label-md": ["14px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #081425;
+            color: #d8e3fb;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .active-dot {
+            width: 24px;
+            background-color: #7c3aed;
+        }
+    </style>
+</head>
+<body class="selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<header class="docked full-width top-0 sticky z-50 backdrop-blur-md bg-surface/80 dark:bg-surface/80 border-b border-outline-variant/20">
+<nav class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<div class="text-headline-md font-headline-md font-bold text-on-surface dark:text-on-surface">Krisna Murti</div>
+<!-- Desktop Nav -->
+<div class="hidden md:flex items-center gap-8">
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary transition-colors duration-200 font-body-md text-body-md" href="#about">About</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary transition-colors duration-200 font-body-md text-body-md" href="#skills">Skills</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary transition-colors duration-200 font-body-md text-body-md" href="#journey">Journey</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary transition-colors duration-200 font-body-md text-body-md" href="#contact">Contact</a>
+</div>
+<button class="bg-primary-container text-on-primary-container px-6 py-2.5 rounded-full font-label-md text-label-md hover:scale-105 active:scale-95 transition-all shadow-lg shadow-primary-container/20">
+                Hire Me 🚀
+            </button>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-[80vh] flex items-center justify-center pt-20 overflow-hidden px-6">
+<div class="absolute top-1/4 -left-20 w-96 h-96 bg-primary-container/10 blur-[120px] rounded-full"></div>
+<div class="absolute bottom-1/4 -right-20 w-96 h-96 bg-secondary-container/10 blur-[120px] rounded-full"></div>
+<div class="max-w-4xl mx-auto text-center relative z-10">
+<span class="inline-block py-1 px-4 rounded-full bg-surface-container-highest border border-outline-variant/30 text-secondary font-label-md text-label-md mb-6">
+                    Pelajar &amp; Web Developer Enthusiast
+                </span>
+<h1 class="text-display font-display text-on-surface mb-6 leading-tight">
+                    Krisna Murti
+                </h1>
+<p class="text-headline-md font-headline-md text-on-surface-variant mb-10 max-w-2xl mx-auto opacity-90">
+                    Siswa SMA yang sedang belajar membangun web, <span class="text-primary">satu baris kode setiap hari.</span>
+</p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+<a class="w-full sm:w-auto bg-primary-container text-on-primary-container px-8 py-4 rounded-xl font-headline-md text-[18px] hover:shadow-xl hover:shadow-primary-container/30 transition-all flex items-center justify-center gap-2" href="#journey">
+                        Lihat Progres Belajar <span class="material-symbols-outlined">trending_up</span>
+</a>
+<a class="w-full sm:w-auto bg-surface-container-high border border-outline-variant text-on-surface px-8 py-4 rounded-xl font-headline-md text-[18px] hover:bg-surface-variant transition-all flex items-center justify-center gap-2" href="#contact">
+                        Hubungi Saya <span class="material-symbols-outlined">mail</span>
+</a>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-section-gap px-6 max-w-7xl mx-auto" id="about">
+<div class="grid md:grid-cols-2 gap-16 items-center">
+<div class="relative group">
+<div class="absolute -inset-4 bg-gradient-to-tr from-primary to-secondary rounded-3xl opacity-20 group-hover:opacity-30 transition-opacity blur-xl"></div>
+<div class="relative aspect-square rounded-2xl overflow-hidden border border-outline-variant/30 bg-surface-container shadow-2xl">
+<img class="w-full h-full object-cover grayscale-[20%] group-hover:scale-105 transition-transform duration-700" data-alt="A portrait-style artistic representation of a teenage boy sitting in a dimly lit modern room, illuminated by the soft blue glow of a laptop screen. The aesthetic is clean and cinematic with deep shadows and vibrant purple accent lighting. He is focused, reflecting the theme of a student learner in a dark, tech-inspired environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoDTUkOGQ5iRE6G1TQGiZPNGUbUAes-G1keSqIPFJI-ibefphbxLI5SCd_Msvpea-ttvvLi42_bgi02I2S5AyN83cF7tvXE5Zs8YX0HZdr9RZIoDNk5T5j3IEBNj80P798kA-Mcn8IL5UrJBKLg87YN-9gZ_Byl4vmKpdYo7GvMYMXhGCU2EfvZzzPJtgHXz3eu1dun3hq7ACBKmrPIIEoXys3eAf9bvV1m1g7o5L-_jN43dlIDg06fA"/>
+</div>
+</div>
+<div>
+<h2 class="text-headline-lg font-headline-lg text-on-surface mb-6 flex items-center gap-3">
+                        Perjalanan Dimulai <span class="text-secondary">✨</span>
+</h2>
+<div class="space-y-6 text-body-lg font-body-lg text-on-surface-variant">
+<p>
+                            Semuanya dimulai ketika saya penasaran bagaimana sebuah tombol di internet bisa berpindah halaman. Rasa ingin tahu itu membawa saya ke dunia <span class="text-primary font-semibold">HTML &amp; CSS</span> yang awalnya terlihat seperti bahasa asing bagi saya.
+                        </p>
+<p>
+                            Sebagai siswa SMA, saya membagi waktu antara tugas sekolah dan barisan kode. Setiap kesalahan (bug) yang saya temukan adalah pelajaran baru. Bagi saya, coding bukan sekadar mengetik, tapi cara saya bercerita melalui antarmuka digital yang saya bangun sendiri.
+                        </p>
+<div class="p-6 rounded-2xl bg-surface-container-low border border-outline-variant/20 italic">
+                            "Saya percaya bahwa keahlian bukan tentang seberapa cepat kita sampai, tapi tentang konsistensi satu baris kode setiap hari."
+                        </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Skills Section -->
+<section class="py-section-gap px-6 bg-surface-container-lowest" id="skills">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="text-headline-lg font-headline-lg text-on-surface mb-4">Skill yang Sedang Diasah</h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-xl mx-auto">Fokus utama saya saat ini adalah memperkuat dasar-dasar pengembangan web front-end.</p>
+</div>
+<div class="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+<!-- HTML Progress -->
+<div class="space-y-4">
+<div class="flex justify-between items-end">
+<div>
+<span class="text-label-md font-label-md text-primary uppercase tracking-wider">Language</span>
+<h3 class="text-headline-md font-headline-md text-on-surface">HTML5</h3>
+</div>
+<div class="text-right">
+<span class="bg-primary-container/20 text-primary px-3 py-1 rounded-full text-label-md font-label-md mb-1 inline-block">Learning</span>
+<p class="text-headline-md font-headline-md text-on-surface">70%</p>
+</div>
+</div>
+<div class="h-3 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="h-full w-[70%] bg-gradient-to-r from-primary-container to-primary transition-all duration-1000"></div>
+</div>
+</div>
+<!-- CSS Progress -->
+<div class="space-y-4">
+<div class="flex justify-between items-end">
+<div>
+<span class="text-label-md font-label-md text-secondary uppercase tracking-wider">Styling</span>
+<h3 class="text-headline-md font-headline-md text-on-surface">CSS3</h3>
+</div>
+<div class="text-right">
+<span class="bg-secondary-container/20 text-secondary px-3 py-1 rounded-full text-label-md font-label-md mb-1 inline-block">Learning</span>
+<p class="text-headline-md font-headline-md text-on-surface">60%</p>
+</div>
+</div>
+<div class="h-3 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="h-full w-[60%] bg-gradient-to-r from-secondary-container to-secondary transition-all duration-1000"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Slide Show Case -->
+<section class="py-section-gap px-6 overflow-hidden" id="journey">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+<div>
+<h2 class="text-headline-lg font-headline-lg text-on-surface mb-2">Hasil Pembelajaran ⭐</h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant">Intip proyek-proyek kecil yang saya selesaikan selama belajar.</p>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-3 rounded-full bg-surface-container border border-outline-variant hover:bg-surface-variant transition-colors group" id="prevBtn">
+<span class="material-symbols-outlined group-active:scale-90 transition-transform">arrow_back_ios_new</span>
+</button>
+<button class="p-3 rounded-full bg-surface-container border border-outline-variant hover:bg-surface-variant transition-colors group" id="nextBtn">
+<span class="material-symbols-outlined group-active:scale-90 transition-transform">arrow_forward_ios</span>
+</button>
+</div>
+</div>
+<div class="relative">
+<div class="flex gap-6 overflow-x-auto no-scrollbar snap-x snap-mandatory transition-transform duration-500 ease-out" id="carouselTrack">
+<!-- Slide 1 -->
+<div class="min-w-[100%] md:min-w-[calc(50%-12px)] lg:min-w-[calc(33.333%-16px)] snap-start">
+<div class="bg-surface-container rounded-2xl overflow-hidden border border-outline-variant/20 hover:border-primary/50 transition-colors h-full flex flex-col">
+<div class="aspect-video relative overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A clean and modern website landing page design showing a personal profile header with a minimalist avatar and soft pastel background colors. The layout is centered with rounded corners and elegant typography, reflecting a student's first successful web project. The lighting is bright and inviting within a dark-mode portfolio framework." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDplLBz3I0ZCguK2hqroK1skt22q9-INdBAnzYFdZ_zQIif-knWT17X81cG09xXCcRsaxMCajplzRhFengnNLJCY3VJ96wg3a8T_I_oRLhIPDvGM6JAB9rOFt1WE5tbN24S7Cwd3jLjCQ4JEYEMOaJv5ZZzWec1hhh8ur9vlAKGODvxvhmHSrx9D_khtWdohjTfBAgRJK2iqXV6TJ0sGrfsDCnQWMKatpuHDGFfas2r-x75Xn4h8gnFkg"/>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<div class="flex items-center justify-between mb-3">
+<span class="text-label-md font-label-md text-on-tertiary-container bg-tertiary-container/30 px-3 py-1 rounded-full">Januari 2024</span>
+<span class="text-primary font-semibold text-sm">#Project01</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-on-surface mb-3">Halaman Profil Sederhana</h3>
+<p class="text-body-md font-body-md text-on-surface-variant mb-6 flex-grow">
+                                        Belajar struktur dasar HTML semantik dan bagaimana memberikan warna serta tata letak menggunakan CSS dasar.
+                                    </p>
+<div class="flex gap-2">
+<span class="px-3 py-1 rounded bg-surface-container-highest text-xs font-medium">HTML</span>
+<span class="px-3 py-1 rounded bg-surface-container-highest text-xs font-medium">CSS</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Slide 2 -->
+<div class="min-w-[100%] md:min-w-[calc(50%-12px)] lg:min-w-[calc(33.333%-16px)] snap-start">
+<div class="bg-surface-container rounded-2xl overflow-hidden border border-outline-variant/20 hover:border-primary/50 transition-colors h-full flex flex-col">
+<div class="aspect-video relative overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A sophisticated landing page layout with a grid-based gallery and a feature-rich navigation bar. The design uses deep indigo and violet tones, showcasing CSS Flexbox and Grid mastery. It feels technical yet creative, with smooth shadows and intentional whitespace, typical of a growing web developer's portfolio." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpogOhbuHLTk9DydrgH2KmXlFI4Oh6Fg5ms3Appe0vacOLmTgF1B71QDSlALlLJC9wXc-KdpCH1OtSGX_ZzJrboA-PMv6TUQplC2SuYxjh64nWChwFUd1SyUR__U-ub3_Ncx_y3Jlnd35LrQq-Bvu2xi-nYCPVWG6WhcogHpLzgqVVG8NKfmS9gm_dhtYsYN18k2y0iuWqAguL-74quf6Up0_1gEf8ffCJLRffXYVa0X8d4TytkuMLVg"/>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<div class="flex items-center justify-between mb-3">
+<span class="text-label-md font-label-md text-on-tertiary-container bg-tertiary-container/30 px-3 py-1 rounded-full">Februari 2024</span>
+<span class="text-primary font-semibold text-sm">#Project02</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-on-surface mb-3">Layout Landing Page</h3>
+<p class="text-body-md font-body-md text-on-surface-variant mb-6 flex-grow">
+                                        Eksperimen dengan CSS Flexbox untuk membuat tata letak yang responsif di berbagai ukuran layar.
+                                    </p>
+<div class="flex gap-2">
+<span class="px-3 py-1 rounded bg-surface-container-highest text-xs font-medium">Flexbox</span>
+<span class="px-3 py-1 rounded bg-surface-container-highest text-xs font-medium">Responsive</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Slide 3 -->
+<div class="min-w-[100%] md:min-w-[calc(50%-12px)] lg:min-w-[calc(33.333%-16px)] snap-start">
+<div class="bg-surface-container rounded-2xl overflow-hidden border border-outline-variant/20 hover:border-primary/50 transition-colors h-full flex flex-col">
+<div class="aspect-video relative overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A stylized digital contact form with vibrant input field focus states in bright orange. The interface is sleek and modern, utilizing a dark slate background with crisp white typography. The design emphasizes user experience and interaction, demonstrating the student's progress in creating functional web components." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQ7VrB8bSkPXHP8_vq25V4ywT4WhQLLt7dgwWCv8k9Iu5FwKpQ4u-sMoV9myDMQrxKQGs4KOrMg2oRTs0t-DRrkuchBBa5AKLWtMYCBX2FYD4qQCOQNQmWNBxhSh0X-j8aWMp_qkT3rK2JK8ADrDI1oQe5UkYGC25xgV_69ySKeORswuhSKCY8pwhZBV00inv4jjsE6NhoCdMJ6Bv5iAiwcmW6aTZOnw5OqpyDorHcQLXx9MGSGiVMQg"/>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<div class="flex items-center justify-between mb-3">
+<span class="text-label-md font-label-md text-on-tertiary-container bg-tertiary-container/30 px-3 py-1 rounded-full">Maret 2024</span>
+<span class="text-primary font-semibold text-sm">#Project03</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-on-surface mb-3">Form Kontak Interaktif</h3>
+<p class="text-body-md font-body-md text-on-surface-variant mb-6 flex-grow">
+                                        Membuat form input dengan validasi CSS dan styling kustom untuk state hover serta active.
+                                    </p>
+<div class="flex gap-2">
+<span class="px-3 py-1 rounded bg-surface-container-highest text-xs font-medium">UI Design</span>
+<span class="px-3 py-1 rounded bg-surface-container-highest text-xs font-medium">Forms</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Navigation Dots -->
+<div class="flex justify-center gap-2 mt-10">
+<div class="h-2 w-8 rounded-full bg-primary-container transition-all"></div>
+<div class="h-2 w-2 rounded-full bg-surface-container-highest transition-all"></div>
+<div class="h-2 w-2 rounded-full bg-surface-container-highest transition-all"></div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-section-gap px-6" id="contact">
+<div class="max-w-7xl mx-auto">
+<div class="bg-surface-container-low rounded-3xl p-8 md:p-16 border border-outline-variant/20 relative overflow-hidden">
+<div class="absolute -top-24 -right-24 w-64 h-64 bg-secondary-container/10 blur-[80px] rounded-full"></div>
+<div class="grid lg:grid-cols-2 gap-16 relative z-10">
+<div>
+<h2 class="text-headline-lg font-headline-lg text-on-surface mb-6">Ayo Berdiskusi! ☕</h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant mb-10">
+                                Saya selalu terbuka untuk diskusi seputar web development atau sekadar berkenalan. Mari membangun sesuatu yang keren bersama!
+                            </p>
+<div class="space-y-6">
+<a class="flex items-center gap-4 text-on-surface hover:text-primary transition-colors group" href="#">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center border border-outline-variant/30 group-hover:border-primary/50">
+<span class="material-symbols-outlined">code</span>
+</div>
+<span class="font-headline-md text-body-lg">GitHub @krismurti</span>
+</a>
+<a class="flex items-center gap-4 text-on-surface hover:text-secondary transition-colors group" href="#">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center border border-outline-variant/30 group-hover:border-secondary/50">
+<span class="material-symbols-outlined">photo_camera</span>
+</div>
+<span class="font-headline-md text-body-lg">Instagram @krisnamurti.dev</span>
+</a>
+</div>
+</div>
+<form class="space-y-6 bg-surface-container rounded-2xl p-6 border border-outline-variant/20 shadow-xl">
+<div class="space-y-2">
+<label class="text-label-md font-label-md text-on-surface-variant uppercase">Nama Lengkap</label>
+<input class="w-full bg-surface-container-low border border-outline-variant/30 rounded-xl px-5 py-4 focus:border-secondary focus:ring-0 transition-colors text-on-surface" placeholder="Siapa nama Anda?" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-label-md font-label-md text-on-surface-variant uppercase">Email</label>
+<input class="w-full bg-surface-container-low border border-outline-variant/30 rounded-xl px-5 py-4 focus:border-secondary focus:ring-0 transition-colors text-on-surface" placeholder="Alamat email Anda" type="email"/>
+</div>
+<div class="space-y-2">
+<label class="text-label-md font-label-md text-on-surface-variant uppercase">Pesan</label>
+<textarea class="w-full bg-surface-container-low border border-outline-variant/30 rounded-xl px-5 py-4 focus:border-secondary focus:ring-0 transition-colors text-on-surface" placeholder="Tuliskan pesan Anda di sini..." rows="4"></textarea>
+</div>
+<button class="w-full bg-secondary-container text-on-secondary-container font-headline-md text-[18px] py-4 rounded-xl hover:bg-secondary transition-all active:scale-95 shadow-lg shadow-secondary-container/20" type="submit">
+                                Kirim Pesan
+                            </button>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="full-width bottom bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-outline-variant/10">
+<div class="flex flex-col md:flex-row justify-between items-center py-10 px-8 gap-stack-lg max-w-7xl mx-auto">
+<div class="text-center md:text-left">
+<div class="text-label-md font-label-md font-semibold text-primary mb-2">Krisna Murti</div>
+<p class="text-on-surface-variant dark:text-on-surface-variant text-body-md font-body-md">© 2024 Krisna Murti • Built with Passion</p>
+<p class="text-xs text-outline mt-2 italic">Last updated: November 2024</p>
+</div>
+<div class="flex items-center gap-8">
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary transition-colors font-label-md text-label-md" href="#">GitHub</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary transition-colors font-label-md text-label-md" href="#">LinkedIn</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary transition-colors font-label-md text-label-md" href="#">Twitter</a>
+</div>
+</div>
+</footer>
+<script>
+        // Simple Carousel Logic
+        const track = document.getElementById('carouselTrack');
+        const nextBtn = document.getElementById('nextBtn');
+        const prevBtn = document.getElementById('prevBtn');
+        const dots = document.querySelectorAll('.flex.justify-center.gap-2.mt-10 div');
+
+        nextBtn.addEventListener('click', () => {
+            track.scrollBy({ left: track.offsetWidth / (window.innerWidth > 768 ? 2 : 1), behavior: 'smooth' });
+            updateDots(1);
+        });
+
+        prevBtn.addEventListener('click', () => {
+            track.scrollBy({ left: -(track.offsetWidth / (window.innerWidth > 768 ? 2 : 1)), behavior: 'smooth' });
+            updateDots(-1);
+        });
+
+        function updateDots(direction) {
+            // Simplified dot logic for demo
+            dots.forEach(dot => {
+                dot.classList.remove('h-2', 'w-8', 'bg-primary-container');
+                dot.classList.add('h-2', 'w-2', 'bg-surface-container-highest');
+            });
+            const activeIndex = direction > 0 ? 1 : 0; // Simple toggle
+            dots[activeIndex].classList.add('h-2', 'w-8', 'bg-primary-container');
+            dots[activeIndex].classList.remove('w-2', 'bg-surface-container-highest');
+        }
+
+        // Intersection Observer for Progress Bars
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.5 });
+
+        document.querySelectorAll('#skills .h-full').forEach(bar => observer.observe(bar));
+    </script>
+</body></html>
